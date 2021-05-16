@@ -1,0 +1,17 @@
+interface Props {
+  title: string;
+  Icon: (props: React.SVGProps<SVGSVGElement>) => JSX.Element;
+}
+
+const Icon: React.FC<Props> = ({ title, Icon }) => {
+  return (
+    <div className='flex flex-col items-center cursor-pointer group w-12 sm:w-20'>
+      <Icon className='h-6 mb-1 group-hover:animate-bounce' />
+      <p className='uppercase opacity-0 group-hover:opacity-100 tracking-widest'>
+        {title}
+      </p>
+    </div>
+  );
+};
+
+export default Icon;
