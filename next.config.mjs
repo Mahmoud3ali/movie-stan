@@ -23,5 +23,6 @@ const config = {
   images: {
     domains: ["image.tmdb.org"],
   },
+  distDir: "build",
 };
 export default config;
